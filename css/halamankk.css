@@ -1,0 +1,126 @@
+* {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 5%;
+    background-color: rgb(251, 155, 168);
+    border-bottom: 1px solid #301109;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .navbar-logo {
+    font-size: 1.7rem;
+    color: #fb9ba8;
+    font-style: normal;
+}
+
+.navbar .navbar-logo span {
+    color: var(--bg);
+}
+
+.navbar .navbar-nav a {
+    color: hsl(160, 100%, 99%);
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    display: inline-block;
+    margin: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.navbar .navbar-nav a:hover {
+    color: #101010;
+}
+
+.navbar .navbar-nav a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid #010101;
+    transform: scaleX(0);
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.7);
+    transition: 0.2s linear;
+}
+
+
+.container {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: 90px;
+}
+
+.contact {
+    margin-top: 70px;
+    text-align: center;
+    color: #9e5378;
+    font-size: 25px;
+    font-style: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact .row {
+    display: inline-table;
+    margin-top: 2rem;
+    background-color: #fb9ba8;
+    margin-right: 80px;
+    margin-left: 50px;
+}
+
+.contact .row .images {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.contact .row .form {
+    flex: 1 1 45rem;
+    padding:  5rem 2rem;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.contact .row form .input-grup {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: #fff;
+    border: 1px solid #9e5378;
+    padding-left: 2rem;
+}
+
+.contact .row form .input-grup input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    background: none;
+    color: #010101;
+}
+
+.contact .row form .btn {
+    margin-top: 3rem;
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #9e5378;
+    cursor: pointer;
+}
